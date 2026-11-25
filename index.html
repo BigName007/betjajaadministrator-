@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Betgjaja Administrator</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f4f8;
+  color: #172033;
+}
+header {
+  background: #071d36;
+  color: white;
+  padding: 24px;
+  text-align: center;
+}
+header h1 { color: #20c878; }
+main {
+  max-width: 430px;
+  margin: 45px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 5px 25px #0001;
+}
+h2 { text-align: center; }
+p { text-align: center; color: #687386; }
+label { display: block; margin-top: 20px; }
+input {
+  width: 100%;
+  padding: 14px;
+  margin-top: 8px;
+  border: 1px solid #ccd3dc;
+  border-radius: 7px;
+  font-size: 16px;
+}
+button {
+  width: 100%;
+  padding: 15px;
+  margin-top: 25px;
+  background: #087c49;
+  color: white;
+  border: 0;
+  border-radius: 7px;
+  font-size: 17px;
+  font-weight: bold;
+}
+footer {
+  text-align: center;
+  color: #687386;
+  margin-top: 25px;
+  font-size: 12px;
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>BETGJAJA</h1>
+  <p style="color:white">ADMINISTRATOR PORTAL</p>
+</header>
+
+<main>
+  <h2>Administrator Login</h2>
+  <p>Welcome to your management portal</p>
+
+  <form id="loginForm">
+    <label>Administrator Username</label>
+    <input type="text" placeholder="Enter username" required>
+
+    <label>Password</label>
+    <input type="password" placeholder="Enter password" required>
+
+    <button type="submit">Sign In</button>
+  </form>
+
+  <footer>
+    Secure administrator access<br>
+    Betgjaja Administrator © 2026
+  </footer>
+</main>
+<script>
+document.getElementById("loginForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  alert("Login service will be connected to secure authentication.");
+});
+</script>
+</body>
+</html>
